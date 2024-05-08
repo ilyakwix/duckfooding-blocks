@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  padding: var(--spacing-48);
+  flex-direction: column;
+  row-gap: var(--spacing-48);
+  align-items: center;
+}
+.content {
+  max-width: 1200px;
+  display: flex;
+  column-gap: var(--spacing-16);
+}

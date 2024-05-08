@@ -1,0 +1,43 @@
+.root {
+  background: var(--white);
+  overflow: hidden;
+  border-radius: 8px;
+}
+.link {
+  color: var(--primary);
+  text-decoration-line: none;
+}
+.description {
+  margin-bottom: var(--spacing-24);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 2;
+  object-fit: cover;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+
+  &.center {
+    text-align: center;
+  }
+  &.left {
+    text-align: left;
+  }
+  &.default {
+    padding: var(--spacing-32);
+    .title {
+      font: var(--heading-4);
+      margin-bottom: var(--spacing-12);
+    }
+  }
+  &.small {
+    padding: var(--spacing-24);
+    .title {
+      font: var(--heading-6);
+      margin-bottom: var(--spacing-8);
+    }
+  }
+}
