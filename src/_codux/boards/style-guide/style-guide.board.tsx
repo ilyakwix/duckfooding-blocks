@@ -328,39 +328,39 @@ export default createBoard({
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing16)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>16px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing20)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>20px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing24)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>24px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing32)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>32px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing40)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>40px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing48)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>48px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing64)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>64px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing80)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>80px</div>
                         </div>
                         <div>
                             <div className={classNames(styles.spacingBlock, styles.spacing120)} />
-                            <div className={styles.details}>Small</div>
+                            <div className={styles.details}>120px</div>
                         </div>
                     </div>
                 </div>
