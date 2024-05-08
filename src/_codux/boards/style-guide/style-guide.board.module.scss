@@ -67,10 +67,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px;
+  padding: var(--spacing-8);
   border-radius: 6px;
   border: 1px solid #e5e5e5;
   justify-content: center;
+  margin-bottom: var(--spacing-8);
 }
 .fontFamilyAa {
   font-size: 28px;
@@ -125,14 +126,15 @@
   height: 68px;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  margin-bottom: 6px;
+  margin-bottom: var(--spacing-8);
 }
 
 .shadowContainer {
   width: 88px;
   height: 68px;
   border-radius: 8px;
-  margin-bottom: 6px;
+  margin-bottom: var(--spacing-8);
+  border: 1px solid var(--gray-200);
 }
 .spacingContainer {
   width: 68px;
@@ -242,4 +244,13 @@
 }
 .colorError {
   background: var(--error);
+}
+.shadowSmall {
+  box-shadow: var(--shadow-small);
+}
+.shadowMedium {
+  box-shadow: var(--shadow-medium);
+}
+.shadowLarge {
+  box-shadow: var(--shadow-large);
 }

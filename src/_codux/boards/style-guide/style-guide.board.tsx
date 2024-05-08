@@ -11,7 +11,7 @@ export default createBoard({
             <section className={styles.pageHeader}>
                 <h1 className={styles.pageTitle}>Style Guide</h1>
                 <div className={styles.logo}>
-                    <span className={styles.logoMarker}>Noco</span>Blocks
+                    <span className={styles.logoMarker}>Noco</span>Blox
                 </div>
             </section>
             <section>
@@ -26,19 +26,33 @@ export default createBoard({
                     </div>
                 </div>
                 <div className={styles.subSection}>
-                    <h2 className={styles.subSectionTitle}>Font Family</h2>
-                    <div className={styles.flexContainer}>
-                        <div className={styles.fontFamilyContainer}>
-                            <span className={classNames(styles.fontFamilyAa, styles.displayFont)}>
-                                Aa
-                            </span>
-                            <span className={classNames('pNormal')}>Poppins</span>
-                        </div>
-                        <div className={styles.fontFamilyContainer}>
-                            <span className={classNames(styles.fontFamilyAa, styles.fontText)}>
-                                Aa
-                            </span>
-                            <span className={classNames('pNormal')}>Inter </span>
+                    <div className={styles.contentBlock}>
+                        <h2 className={styles.subSectionTitle}>Font Family</h2>
+                        <div className={styles.flexContainer}>
+                            <div>
+                                <div className={styles.fontFamilyContainer}>
+                                    <span
+                                        className={classNames(
+                                            styles.fontFamilyAa,
+                                            styles.displayFont,
+                                        )}
+                                    >
+                                        Aa
+                                    </span>
+                                    <span className={classNames('pNormal')}></span>
+                                </div>
+                                <div className={styles.details}>Poppins</div>
+                            </div>
+                            <div>
+                                <div className={styles.fontFamilyContainer}>
+                                    <span
+                                        className={classNames(styles.fontFamilyAa, styles.fontText)}
+                                    >
+                                        Aa
+                                    </span>
+                                </div>
+                                <div className={styles.details}>Inter</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -260,16 +274,22 @@ export default createBoard({
                 <div className={styles.subSection}>
                     <div className={styles.flexContainer}>
                         <div>
-                            <div className={styles.shadowContainer} />
-                            <div className={styles.details}>shadow100</div>
+                            <div
+                                className={classNames(styles.shadowContainer, styles.shadowSmall)}
+                            />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={styles.shadowContainer} />
-                            <div className={styles.details}>shadow200</div>
+                            <div
+                                className={classNames(styles.shadowContainer, styles.shadowMedium)}
+                            />
+                            <div className={styles.details}>Medium</div>
                         </div>
                         <div>
-                            <div className={styles.shadowContainer} />
-                            <div className={styles.details}>shadow300</div>
+                            <div
+                                className={classNames(styles.shadowContainer, styles.shadowLarge)}
+                            />
+                            <div className={styles.details}>Large</div>
                         </div>
                     </div>
                 </div>
