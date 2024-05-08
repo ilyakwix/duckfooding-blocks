@@ -1,0 +1,245 @@
+.root {
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: var(--spacing-80);
+  padding-left: var(--spacing-80);
+  padding-top: var(--spacing-40);
+  padding-bottom: var(--spacing-40);
+}
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 48px;
+  letter-spacing: -0.005em;
+}
+.logo {
+  text-transform: uppercase;
+  color: var(--primary-30);
+  font-size: 30px;
+  letter-spacing: -0.025em;
+}
+.sectionHeader {
+  padding-top: var(--spacing-24);
+  padding-bottom: var(--spacing-24);
+  padding-right: var(--spacing-80);
+  padding-left: var(--spacing-48);
+  background-color: #ebeef5;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 24px 1fr;
+  column-gap: var(--spacing-8);
+}
+
+.sectionTitle {
+  display: flex;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1;
+  column-gap: var(--spacing-12);
+  margin-bottom: var(--spacing-12);
+  font: var(--heading-4);
+  line-height: 1;
+}
+.sectionSubtitle {
+  color: #898989;
+  font-size: 15px;
+}
+.subSection {
+  padding-right: var(--spacing-80);
+  padding-left: var(--spacing-80);
+  padding-bottom: var(--spacing-32);
+  padding-top: var(--spacing-32);
+}
+.subSectionTitle {
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 20px;
+  font-family: var(--font-text);
+  padding-bottom: var(--spacing-8);
+}
+.fontFamilyContainer {
+  width: 86px;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  justify-content: center;
+}
+.fontFamilyAa {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.displayFont {
+  font-family: var(--font-display);
+}
+
+.fontText {
+  font-family: var(--font-text);
+}
+
+.flexContainer {
+  display: flex;
+  gap: var(--spacing-16);
+  flex-wrap: wrap;
+}
+
+.details {
+  color: #898989;
+  font-size: 11px;
+}
+.margin {
+  margin: 0;
+}
+
+.subColor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  justify-content: center;
+  height: 100%;
+}
+
+.coloContainer {
+  display: flex;
+  flex-direction: column;
+}
+.grid1 {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 125px);
+}
+.colorContainer {
+  width: 88px;
+  height: 68px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.shadowContainer {
+  width: 88px;
+  height: 68px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.spacingContainer {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 6px;
+  display: flex;
+  background-color: #efcca2;
+}
+
+.marginContainer {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 6px;
+  display: flex;
+  background-color: #efcca2;
+}
+
+.paddingContainer {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  display: flex;
+  background-color: #c9ddbb;
+}
+
+.spacingBox {
+  background-color: #ebeef5;
+  width: 100%;
+}
+.logoMarker {
+  font-weight: 700;
+}
+.headingOne {
+  font: var(--heading-1);
+}
+.headingTwo {
+  font: var(--heading-2);
+}
+.headingThree {
+  font: var(--heading-3);
+}
+.headingFour {
+  font: var(--heading-4);
+}
+.headingFive {
+  font: var(--heading-5);
+}
+.headingSix {
+  font: var(--heading-6);
+}
+.headingSixSmall {
+  font: var(--heading-6-small);
+}
+.textLarge {
+  font: var(--text-large);
+  max-width: 38em;
+}
+.textBody {
+  font: var(--text-body);
+  max-width: 38em;
+}
+.textSmall {
+  font: var(--text-small);
+  max-width: 38em;
+}
+.contentBlock {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-auto-rows: min-content;
+  row-gap: var(--spacing-8);
+  margin-bottom: var(--spacing-32);
+}
+
+.asterisk {
+  position: relative;
+  top: var(--spacing-2);
+}
+.colorPrimary {
+  background: var(--primary);
+}
+.colorSecondary {
+  background: var(--secondary);
+}
+.colorAccent {
+  background-color: var(--accent);
+}
+.colorWhite {
+  background: var(--white);
+}
+.colorGray100 {
+  background: var(--gray-100);
+}
+.colorGray200 {
+  background: var(--gray-200);
+}
+.colorGray300 {
+  background: var(--gray-300);
+}
+.colorBlack {
+  background: var(--black);
+}
+.colorSuccess {
+  background: var(--success);
+}
+.colorWarning {
+  background: var(--warning);
+}
+.colorError {
+  background: var(--error);
+}
