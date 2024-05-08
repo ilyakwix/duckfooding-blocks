@@ -254,3 +254,52 @@
 .shadowLarge {
   box-shadow: var(--shadow-large);
 }
+.spacingList {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-16);
+}
+.spacingBlock {
+  height: 40px;
+  margin-bottom: var(--spacing-8);
+  background: var(--accent);
+}
+.spacing2 {
+  width: var(--spacing-2);
+}
+.spacing4 {
+  width: var(--spacing-4);
+}
+.spacing8 {
+  width: var(--spacing-8);
+}
+.spacing12 {
+  width: var(--spacing-12);
+}
+.spacing16 {
+  width: var(--spacing-16);
+}
+.spacing20 {
+  width: var(--spacing-20);
+}
+.spacing24 {
+  width: var(--spacing-24);
+}
+.spacing32 {
+  width: var(--spacing-32);
+}
+.spacing40 {
+  width: var(--spacing-40);
+}
+.spacing48 {
+  width: var(--spacing-48);
+}
+.spacing64 {
+  width: var(--spacing-64);
+}
+.spacing80 {
+  width: var(--spacing-80);
+}
+.spacing120 {
+  width: var(--spacing-120);
+}

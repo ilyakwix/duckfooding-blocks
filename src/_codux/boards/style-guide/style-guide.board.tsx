@@ -309,180 +309,58 @@ export default createBoard({
                     </div>
                 </div>
                 <div className={styles.subSection}>
-                    <h2 className={styles.subSectionTitle}>Margin</h2>
-                    <div className={styles.flexContainer}>
+                    <div className={styles.spacingList}>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin2')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin2
-                                <br />
-                                2px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing2)} />
+                            <div className={styles.details}>2px</div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames('margin4', styles.spacingBox)} />
-                            </div>
-                            <div className={styles.details}>
-                                margin4
-                                <br />
-                                4px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing4)} />
+                            <div className={styles.details}>4px</div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin6')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin6
-                                <br />
-                                6px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing8)} />
+                            <div className={styles.details}>8px </div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin12')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin12
-                                <br />
-                                12px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing12)} />
+                            <div className={styles.details}>12px</div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin16')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin16
-                                <br />
-                                16px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing16)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin24')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin24
-                                <br />
-                                24px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing20)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin32')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin32
-                                <br />
-                                32px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing24)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={styles.marginContainer}>
-                                <div className={classNames(styles.spacingBox, 'margin40')} />
-                            </div>
-                            <div className={styles.details}>
-                                margin40
-                                <br />
-                                40px{' '}
-                            </div>
-                        </div>
-                    </div>
-                    <h2 className={styles.subSectionTitle}>Padding</h2>
-                    <div className={styles.flexContainer}>
-                        <div>
-                            <div className={classNames(styles.paddingContainer, 'padding2')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding2
-                                <br />
-                                2px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing32)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={classNames('padding4', styles.paddingContainer)}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding4
-                                <br />
-                                4px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing40)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={classNames(styles.paddingContainer, 'padding6')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding6
-                                <br />
-                                6px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing48)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={classNames(styles.paddingContainer, 'padding8')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding8
-                                <br />
-                                8px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing64)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={classNames(styles.paddingContainer, 'padding12')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding12
-                                <br />
-                                12px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing80)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                         <div>
-                            <div className={classNames(styles.paddingContainer, 'padding16')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding16
-                                <br />
-                                16px{' '}
-                            </div>
-                        </div>
-                        <div>
-                            <div className={classNames(styles.paddingContainer, 'padding24')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding24
-                                <br />
-                                24px{' '}
-                            </div>
-                        </div>
-                        <div>
-                            <div className={classNames(styles.paddingContainer, 'padding32')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding32
-                                <br />
-                                32px{' '}
-                            </div>
-                        </div>
-                        <div>
-                            <div className={classNames(styles.paddingContainer, 'padding40')}>
-                                <div className={styles.spacingBox} />
-                            </div>
-                            <div className={styles.details}>
-                                padding40
-                                <br />
-                                40px{' '}
-                            </div>
+                            <div className={classNames(styles.spacingBlock, styles.spacing120)} />
+                            <div className={styles.details}>Small</div>
                         </div>
                     </div>
                 </div>
