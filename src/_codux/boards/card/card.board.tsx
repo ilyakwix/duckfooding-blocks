@@ -1,6 +1,12 @@
 import { createBoard } from '@wixc3/react-board';
 import { Card } from '../../../components/card/card';
 import styles from './card.board.module.scss';
+import PaulRandWebp from '../../../assets/paul-rand.webp';
+import RayEamesWebp from '../../../assets/ray-eames.webp';
+import DieterRams2Webp from '../../../assets/dieter-rams2.webp';
+import TomCruiseWebp from '../../../assets/tom-cruise.webp';
+import SteveJobs2Webp from '../../../assets/steve-jobs2.webp';
+import SteveJobsWebp from '../../../assets/steve-jobs.webp';
 
 export default createBoard({
     name: 'Card',
@@ -8,76 +14,69 @@ export default createBoard({
         <div className={styles.root}>
             <div className={styles.content}>
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
-                    title="Ray Eames"
+                    imageUrl={DieterRams2Webp}
+                    title="Dieter Rams"
                     link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    description="Good design is as little design as possible."
                     alignment="center"
+                    imageOverlay
                     to="codux.com"
                 />
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
-                    title="Ray Eames"
+                    imageUrl={PaulRandWebp}
+                    title="Paul Rand"
                     link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    description="Design is so simple, that's why it is so complicated."
                     alignment="center"
                     to="codux.com"
+                    imageOverlay
                 />
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
+                    imageUrl={RayEamesWebp}
                     title="Ray Eames"
                     link="More Quotes"
                     description="What works good is better than what looks good, because what works good lasts."
                     alignment="center"
                     to="codux.com"
+                    imageOverlay
                 />
             </div>
             <div className={styles.content}>
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
+                    imageUrl={TomCruiseWebp}
                     title="Ray Eames"
                     link="More Quotes"
                     description="What works good is better than what looks good, because what works good lasts."
                     variant="small"
                     to="codux.com"
+                    imageOverlay
                 />
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
+                    imageUrl={SteveJobs2Webp}
                     title="Ray Eames"
                     link="More Quotes"
                     description="What works good is better than what looks good, because what works good lasts."
                     variant="small"
                     to="codux.com"
+                    imageOverlay
                 />
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
+                    imageUrl={SteveJobsWebp}
                     title="Ray Eames"
                     link="More Quotes"
                     description="What works good is better than what looks good, because what works good lasts."
                     variant="small"
                     to="codux.com"
+                    imageOverlay
                 />
                 <Card
-                    imageUrl={
-                        'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg'
-                    }
+                    imageUrl={DieterRams2Webp}
                     title="Ray Eames"
                     link="More Quotes"
                     description="What works good is better than what looks good, because what works good lasts."
                     variant="small"
                     to="codux.com"
+                    imageOverlay
                 />
             </div>
 
