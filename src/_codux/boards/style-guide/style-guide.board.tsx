@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import '../../../styles/variables.scss';
 import { createBoard } from '@wixc3/react-board';
 import styles from './style-guide.board.module.scss';
 import SectionSvg from '../../../assets/section.svg';
