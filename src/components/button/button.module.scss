@@ -1,0 +1,117 @@
+.root {
+  --hoverEffectDark: inset 0 0 0 40px rgba(0, 0, 0, 0.1);
+  --hoverEffectLight: inset 0 0 0 40px rgba(255, 255, 255, 0.2);
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.outline {
+  box-shadow: inset 0 0 0 2px var(--primary);
+  color: var(--primary);
+  &:hover {
+    background: var(--primary);
+    color: var(--white);
+  }
+}
+.primary {
+  background: var(--primary);
+  color: var(--white);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.secondary {
+  color: var(--white);
+  background: var(--secondary);
+  &:hover {
+    box-shadow: var(--hoverEffectLight);
+  }
+}
+.accent {
+  background: var(--accent);
+  color: var(--white);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.success {
+  color: var(--white);
+  background: var(--success);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.warning {
+  background: var(--warning);
+  color: var(--white);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.error {
+  color: var(--white);
+  background: var(--error);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.white {
+  background: var(--white);
+  color: var(--black);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.gray1 {
+  background: var(--gray-100);
+  color: var(--black);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.gray2 {
+  background: var(--gray-200);
+  color: var(--black);
+  &:hover {
+    box-shadow: var(--hoverEffectDark);
+  }
+}
+.gray3 {
+  background: var(--gray-300);
+  color: var(--white);
+  &:hover {
+    box-shadow: var(--hoverEffectLight);
+  }
+}
+.black {
+  background: var(--black);
+  color: var(--white);
+  &:hover {
+    box-shadow: var(--hoverEffectLight);
+  }
+}
+.standard {
+  padding-top: var(--spacing-8);
+  padding-bottom: var(--spacing-8);
+  padding-right: var(--spacing-24);
+  padding-left: var(--spacing-24);
+  font: var(--text-body);
+  font-weight: 600;
+}
+.small {
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  padding-right: var(--spacing-12);
+  padding-left: var(--spacing-12);
+  font: var(--text-small);
+  font-weight: 600;
+}
+.large {
+  padding-top: var(--spacing-16);
+  padding-left: var(--spacing-32);
+  padding-right: var(--spacing-32);
+  padding-bottom: var(--spacing-16);
+  font: var(--text-body);
+  font-weight: 600;
+}
