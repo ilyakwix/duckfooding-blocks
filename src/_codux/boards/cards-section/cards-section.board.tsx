@@ -3,7 +3,7 @@ import { CardsSection } from '../../../components/cards-section/cards-section';
 
 export default createBoard({
     name: 'CardsSection',
-    Board: () => <CardsSection />,
+    Board: () => <CardsSection backgroundColor="secondary" />,
     isSnippet: true,
     environmentProps: {
         canvasMargin: {
