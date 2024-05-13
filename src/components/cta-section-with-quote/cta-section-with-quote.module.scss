@@ -37,4 +37,23 @@
 }
 .description {
   margin-bottom: var(--spacing-24);
+  font: var(--text-large);
+}
+.author {
+  font: var(--handwriting-3);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.quote {
+  font: var(--text-large);
+  font-weight: 400;
+}
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-32);
+  position: relative;
+  z-index: 10;
 }

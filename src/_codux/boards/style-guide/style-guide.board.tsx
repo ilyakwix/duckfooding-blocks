@@ -52,6 +52,19 @@ export default createBoard({
                                 </div>
                                 <div className={styles.details}>Inter</div>
                             </div>
+                            <div>
+                                <div className={styles.fontFamilyContainer}>
+                                    <span
+                                        className={classNames(
+                                            styles.fontFamilyAa,
+                                            styles.handwriting,
+                                        )}
+                                    >
+                                        Aa
+                                    </span>
+                                </div>
+                                <div className={styles.details}>Caveat</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,6 +145,14 @@ export default createBoard({
                             functionality in their creations.
                         </p>
                         <div className={styles.details}>Inter, 400</div>
+                    </div>
+                    <div className={styles.contentBlock}>
+                        <h2 className={styles.subSectionTitle}>Handwriting</h2>
+                        <p className={styles.handwritingThree}>
+                            Like all good design, mine is ridiculously simple, but it solves a
+                            problem.
+                        </p>
+                        <div className={styles.details}>Inter, 700</div>
                     </div>
                 </div>
             </section>

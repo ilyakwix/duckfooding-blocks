@@ -24,15 +24,16 @@ export const CtaSectionWithQuote = ({ className }: CtaSectionWithQuoteProps) => 
                     </p>
                     <Button variant="white">Edit in Codux</Button>
                 </div>
-                <blockquote className={styles.quote}>
-                    <p>
+                <blockquote className={styles.quoteContainer}>
+                    <p className={styles.quote}>
                         While optimization is important, especially in performance-critical
                         applications, it needs to be balanced with the practical requirements of
                         finishing products, maintaining them, and the real-world impact of the
                         optimizations. This is a paragraph.
                     </p>
-                    <footer>
-                        —ChatGPT, <cite>on Donald Knuth</cite>
+                    <footer className={styles.footer}>
+                        <span className={styles.author}>ChatGPT</span>
+                        <cite>on Donald Knuth</cite>
                     </footer>
                 </blockquote>
             </div>
