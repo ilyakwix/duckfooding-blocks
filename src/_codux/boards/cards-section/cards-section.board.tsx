@@ -2,7 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { CardsSection } from '../../../components/cards-section/cards-section';
 
 export default createBoard({
-    name: 'CardsSection',
+    name: 'Cards Section',
     Board: () => <CardsSection backgroundColor="secondary" />,
     isSnippet: true,
     environmentProps: {

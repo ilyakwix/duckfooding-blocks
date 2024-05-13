@@ -4,7 +4,7 @@ import styles from './style-guide.board.module.scss';
 import SectionSvg from '../../../assets/section.svg';
 
 export default createBoard({
-    name: 'StyleGuide',
+    name: 'Style Guide',
     Board: () => (
         <div className={classNames(styles.root)}>
             <section className={styles.pageHeader}>

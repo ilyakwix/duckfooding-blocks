@@ -1,0 +1,40 @@
+.root {
+  background: var(--primary);
+  color: var(--white);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  max-width: 1248px;
+  padding-right: var(--spacing-24);
+  padding-left: var(--spacing-24);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: var(--spacing-80);
+  padding-top: var(--spacing-80);
+  column-gap: var(--spacing-40);
+}
+.illustration {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 0px;
+  bottom: 0px;
+}
+.main {
+  max-width: 506px;
+  justify-self: center;
+}
+.quote {
+  max-width: 506px;
+}
+.title {
+  font: var(--heading-3);
+  margin-bottom: var(--spacing-16);
+  padding-right: var(--spacing-24);
+}
+.description {
+  margin-bottom: var(--spacing-24);
+}

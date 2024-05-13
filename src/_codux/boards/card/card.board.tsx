@@ -8,6 +8,7 @@ import TomCruiseWebp from '../../../assets/tom-cruise.webp';
 import SteveJobs2Webp from '../../../assets/steve-jobs2.webp';
 import SteveJobsWebp from '../../../assets/steve-jobs.webp';
 
+
 export default createBoard({
     name: 'Card',
     Board: () => (
