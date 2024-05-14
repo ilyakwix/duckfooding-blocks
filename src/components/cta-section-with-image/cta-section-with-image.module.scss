@@ -1,0 +1,89 @@
+.root {
+  background: var(--white);
+  color: var(--black);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.primary {
+    color: var(--white);
+    background: var(--primary);
+  }
+  &.secondary {
+    color: var(--white);
+    background: var(--secondary);
+  }
+  &.white {
+    color: var(--black);
+    background: var(--white);
+  }
+  &.gray1 {
+    color: var(--black);
+    background: var(--gray-100);
+  }
+  &.gray2 {
+    color: var(--black);
+    background: var(--gray-200);
+  }
+  &.gray3 {
+    color: var(--white);
+    background: var(--gray-300);
+  }
+  &.black {
+    color: var(--white);
+    background: var(--black);
+  }
+}
+.container {
+  max-width: 1248px;
+  padding-right: var(--spacing-24);
+  padding-left: var(--spacing-24);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: var(--spacing-80);
+  padding-top: var(--spacing-80);
+  column-gap: var(--spacing-40);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-24);
+  justify-self: center;
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+  align-items: start;
+}
+.kicker {
+  font: var(--heading-6-small);
+  color: var(--primary);
+
+  &.on-primary {
+    color: var(--white);
+  }
+  &.on-secondary {
+    color: var(--accent);
+  }
+  &.on-white {
+    color: var(--primary);
+  }
+  &.on-gray1 {
+    color: var(--primary);
+  }
+  &.on-gray2 {
+    color: var(--primary);
+  }
+  &.on-gray3 {
+    color: var(--accent);
+  }
+  &.on-black {
+    color: var(--accent);
+  }
+}
+.title {
+  font: var(--heading-1);
+}
+.image {
+  max-width: 612px;
+}

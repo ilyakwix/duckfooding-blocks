@@ -1,0 +1,1 @@
+export type BackgroundColorOptions = "primary" | "secondary" | "white" | "gray1" | "gray2" | "gray3" | "black";

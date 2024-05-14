@@ -1,4 +1,5 @@
 :root {
+  // Typography
   --font-display: Poppins, sans-serif;
   --font-text: Inter, sans-serif;
   --font-handwriting: Caveat, cursive;
@@ -15,6 +16,7 @@
   --text-small: 14px/20px Inter, sans-serif;
   --handwriting-3: 800 32px/38px Caveat, cursive;
 
+  // Colors
   --primary: #068466;
   --secondary: #001e42;
   --accent: #fc9f5b;
@@ -25,10 +27,11 @@
   --gray-300: #62636b;
   --black: #272929;
 
-  --success: #57A773;
-  --warning: #F19953;
-  --error: #ED6A5E;
+  --success: #57a773;
+  --warning: #f19953;
+  --error: #ed6a5e;
 
+  // Spacing
   --spacing-2: 2px;
   --spacing-4: 4px;
   --spacing-8: 8px;
@@ -43,10 +46,12 @@
   --spacing-80: 80px;
   --spacing-120: 120px;
 
+  // Shadows
   --shadow-small: 3px 3px 6px 0 rgba(0, 0, 0, 0.05);
   --shadow-medium: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
   --shadow-large: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
 
+  // Border Radius
   --radius-min: 1px;
   --radius-small: 4px;
   --radius-medium: 8px;
