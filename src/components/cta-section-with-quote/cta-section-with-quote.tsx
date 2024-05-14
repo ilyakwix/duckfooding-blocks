@@ -1,17 +1,20 @@
+import React from 'react';
 import classNames from 'classnames';
 import styles from './cta-section-with-quote.module.scss';
 import { Button } from '../button/button';
 import AbstractPng from '../../assets/abstract.png';
+import { BackgroundColorOptions } from '../types';
 
 export interface CtaSectionWithQuoteProps {
     className?: string;
-    title: string;
+    title?: string;
     description?: string;
-    buttonLabel: string;
-    to: string;
-    quote: string;
-    author: string;
+    buttonLabel?: string;
+    to?: string;
+    quote?: string;
+    author?: string;
     reference?: string;
+    backgroundColor?: BackgroundColorOptions;
 }
 
 /**
@@ -20,30 +23,40 @@ export interface CtaSectionWithQuoteProps {
  */
 export const CtaSectionWithQuote = ({
     className,
-    title,
+    title = 'Title',
     description,
-    buttonLabel,
-    to,
-    quote,
-    author,
+    buttonLabel = 'Call to Action',
+    to = '/',
+    quote = 'Quote',
+    author = 'Author',
     reference,
+    backgroundColor = 'primary',
 }: CtaSectionWithQuoteProps) => {
+    const buttonVariant = React.useMemo(() => {
+        switch (backgroundColor) {
+            case 'primary':
+                return 'white';
+            case 'secondary':
+            case 'gray3':
+            case 'black':
+                return 'accent';
+            default:
+                return 'primary';
+        }
+    }, [backgroundColor]);
+
     return (
-        <section className={classNames(styles.root, className)}>
+        <section className={classNames(styles.root, styles[backgroundColor], className)}>
             <div className={styles.container}>
                 <div className={styles.main}>
                     <h3 className={styles.title}>{title}</h3>
-                    {description && <p className={styles.description}>
-                        {description}
-                    </p>}
-                    <Button variant="white">{buttonLabel}</Button>
+                    {description && <p className={styles.description}>{description}</p>}
+                    <Button variant={buttonVariant}>{buttonLabel}</Button>
                 </div>
                 <blockquote className={styles.quoteContainer}>
-                    <p className={styles.quote}>
-                        {quote}
-                    </p>
+                    <p className={styles.quote}>{quote}</p>
                     <footer className={styles.footer}>
-                        <span className={styles.author}>{author}</span>
+                        <span className={classNames(styles.author, styles[`on-${backgroundColor}`])}>{author}</span>
                         {reference && <cite>{reference}</cite>}
                     </footer>
                 </blockquote>

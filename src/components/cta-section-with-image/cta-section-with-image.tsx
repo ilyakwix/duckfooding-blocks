@@ -10,8 +10,8 @@ export interface CtaSectionWithImageProps {
     imageUrl?: string;
     title?: string;
     kicker?: string;
-    buttonLabel: string;
-    to: string;
+    buttonLabel?: string;
+    to?: string;
     backgroundColor?: BackgroundColorOptions;
 }
 

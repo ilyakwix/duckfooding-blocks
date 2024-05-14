@@ -5,13 +5,64 @@ import AbstractWebp from '../../../assets/abstract.webp';
 export default createBoard({
     name: 'CtaSectionWithImage',
     Board: () => (
-        <CtaSectionWithImage
-            kicker="Linus Torvalds"
-            to="codux.com"
-            imageUrl={AbstractWebp}
-            buttonLabel="Edit in Codux"
-            title="Talk is cheap. Show me the code."
-        />
+        <div>
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="primary"
+            />
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="secondary"
+            />
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="white"
+            />
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="gray1"
+            />
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="gray2"
+            />
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="gray3"
+            />
+            <CtaSectionWithImage
+                kicker="Linus Torvalds"
+                to="codux.com"
+                imageUrl={AbstractWebp}
+                buttonLabel="Edit in Codux"
+                title="Talk is cheap. Show me the code."
+                backgroundColor="black"
+            />
+        </div>
     ),
     isSnippet: false,
     environmentProps: {
