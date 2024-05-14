@@ -2,6 +2,8 @@ import styles from './App.module.scss';
 import { CtaSectionWithImage } from './components/cta-section-with-image/cta-section-with-image';
 import { CtaSectionWithQuote } from './components/cta-section-with-quote/cta-section-with-quote';
 import AbstractWebp from './assets/abstract.webp';
+import { CardsSection } from './components/cards-section/cards-section';
+import { cards, terminatorCards, cardsWithoutImages } from './content/cards';
 
 function App() {
     return (
@@ -22,6 +24,16 @@ function App() {
                 buttonLabel="Edit in Codux"
                 title="Talk is cheap. Show me the code."
             />
+            <CardsSection cards={cards} backgroundColor="gray1" />
+            <CardsSection
+                cards={terminatorCards}
+                backgroundColor="white"
+                cardAlignment="left"
+                cardVariant="small"
+                columns={4}
+                imageAspectRatio="square"
+            />
+            <CardsSection cards={cardsWithoutImages} backgroundColor="secondary" />
         </div>
     );
 }

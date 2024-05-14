@@ -8,6 +8,7 @@ export interface CardProps {
     imageUrl?: string;
     imageAltText?: string;
     imageOverlay?: boolean;
+    imageAspectRatio?: 'square' | 'landscape' | 'portrait';
     title: string;
     description?: string;
     link?: string;
@@ -25,12 +26,22 @@ export const Card = ({
     imageUrl,
     imageAltText,
     imageOverlay,
+    imageAspectRatio = 'landscape',
     title,
     description,
     link,
     to,
 }: CardProps) => {
-    const image = imageUrl && <>{imageOverlay && <div className={styles.imageOverlay} />}<img src={imageUrl} alt={imageAltText} className={styles.image} /></>;
+    const image = imageUrl && (
+        <>
+            {imageOverlay && <div className={styles.imageOverlay} />}
+            <img
+                src={imageUrl}
+                alt={imageAltText}
+                className={classNames(styles.image, styles[imageAspectRatio])}
+            />
+        </>
+    );
     return (
         <div className={classNames(styles.root, className)}>
             {to ? (
@@ -38,9 +49,7 @@ export const Card = ({
                     {image}
                 </a>
             ) : (
-                <div className={styles.imageContainer}>
-                    {image}
-                </div>
+                <div className={styles.imageContainer}>{image}</div>
             )}
             <div className={classNames(styles.details, styles[alignment], styles[variant])}>
                 <h4 className={styles.title}>{title}</h4>

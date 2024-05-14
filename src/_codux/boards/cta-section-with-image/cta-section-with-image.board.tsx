@@ -3,7 +3,7 @@ import { CtaSectionWithImage } from '../../../components/cta-section-with-image/
 import AbstractWebp from '../../../assets/abstract.webp';
 
 export default createBoard({
-    name: 'CtaSectionWithImage',
+    name: 'CTA Section with Image',
     Board: () => (
         <div>
             <CtaSectionWithImage

@@ -4,10 +4,10 @@ import styles from './card.board.module.scss';
 import PaulRandWebp from '../../../assets/paul-rand.webp';
 import RayEamesWebp from '../../../assets/ray-eames.webp';
 import DieterRams2Webp from '../../../assets/dieter-rams2.webp';
-import TomCruiseWebp from '../../../assets/tom-cruise.webp';
-import SteveJobs2Webp from '../../../assets/steve-jobs2.webp';
-import SteveJobsWebp from '../../../assets/steve-jobs.webp';
-
+import Arnie2Webp from '../../../assets/arnie2.webp';
+import ArnieWebp from '../../../assets/arnie.webp';
+import KyleReeseWebp from '../../../assets/kyle-reese.webp';
+import TerminatorWebp from '../../../assets/terminator.webp';
 
 export default createBoard({
     name: 'Card',
@@ -44,37 +44,37 @@ export default createBoard({
             </div>
             <div className={styles.content}>
                 <Card
-                    imageUrl={TomCruiseWebp}
-                    title="Ray Eames"
+                    imageUrl={Arnie2Webp}
+                    title="I'll be back."
                     link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    description="The Terminator (1984)"
                     variant="small"
                     to="codux.com"
                     imageOverlay
                 />
                 <Card
-                    imageUrl={SteveJobs2Webp}
-                    title="Ray Eames"
+                    imageUrl={ArnieWebp}
+                    title="Hasta la vista, baby."
                     link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    description="Terminator 2: Judgment Day (1991)"
                     variant="small"
                     to="codux.com"
                     imageOverlay
                 />
                 <Card
-                    imageUrl={SteveJobsWebp}
-                    title="Ray Eames"
+                    imageUrl={KyleReeseWebp}
+                    title="Come with me if you want to live."
                     link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    description="First said by Kyle Reese in The Terminator (1984) and later repeated by the T-800 in different contexts in the sequels."
                     variant="small"
                     to="codux.com"
                     imageOverlay
                 />
                 <Card
-                    imageUrl={DieterRams2Webp}
-                    title="Ray Eames"
+                    imageUrl={TerminatorWebp}
+                    title="Judgment Day is inevitable."
                     link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    description="Terminator 3: Rise of the Machines (2003)"
                     variant="small"
                     to="codux.com"
                     imageOverlay
@@ -114,5 +114,6 @@ export default createBoard({
             right: 0,
         },
         windowBackgroundColor: '#f8f6f4',
+        windowWidth: 1440,
     },
 });
