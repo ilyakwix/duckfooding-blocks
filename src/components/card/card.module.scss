@@ -18,10 +18,10 @@
   width: 100%;
   object-fit: cover;
   &.landscape {
-    aspect-ratio: 2/1;
+    aspect-ratio: 3/2;
   }
   &.portrait {
-    aspect-ratio: 1/2;
+    aspect-ratio: 2/3;
   }
   &.square {
     aspect-ratio: 1/1;

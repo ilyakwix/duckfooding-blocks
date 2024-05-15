@@ -8,38 +8,42 @@ import Arnie2Webp from '../../../assets/arnie2.webp';
 import ArnieWebp from '../../../assets/arnie.webp';
 import KyleReeseWebp from '../../../assets/kyle-reese.webp';
 import TerminatorWebp from '../../../assets/terminator.webp';
+import Classnames from 'classnames';
 
 export default createBoard({
     name: 'Card',
     Board: () => (
         <div className={styles.root}>
-            <div className={styles.content}>
+            <div className={Classnames(styles.content, styles.imageAspectRatio)}>
                 <Card
                     imageUrl={DieterRams2Webp}
-                    title="Dieter Rams"
-                    link="More Quotes"
-                    description="Good design is as little design as possible."
+                    title="Landscape"
+                    link="Edit prop"
+                    description="ImageAspectRatio. Landscape by default"
                     alignment="center"
                     imageOverlay
                     to="codux.com"
+                    imageAspectRatio="landscape"
                 />
                 <Card
                     imageUrl={PaulRandWebp}
-                    title="Paul Rand"
-                    link="More Quotes"
-                    description="Design is so simple, that's why it is so complicated."
+                    title="Square"
+                    link="Edit prop"
+                    description="ImageAspectRatio"
                     alignment="center"
                     to="codux.com"
                     imageOverlay
+                    imageAspectRatio="square"
                 />
                 <Card
                     imageUrl={RayEamesWebp}
-                    title="Ray Eames"
-                    link="More Quotes"
-                    description="What works good is better than what looks good, because what works good lasts."
+                    title="Portrait"
+                    link="Edit prop"
+                    description="ImageAspectRatio"
                     alignment="center"
                     to="codux.com"
                     imageOverlay
+                    imageAspectRatio="portrait"
                 />
             </div>
             <div className={styles.content}>
